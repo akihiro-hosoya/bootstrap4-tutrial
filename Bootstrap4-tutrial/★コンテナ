@@ -1,0 +1,29 @@
+★コンテナ
+レイアウトのトップレベル要素(コンテナ)として .container または .container-fluid を用いる。
+div.container ⇒ (レスポンシブ) 画面幅の内側に入る固定ステップに調整、中央揃え
+
+
+・レスポンシブ 動作のブレークポイント
+    Extra small (xs) devices (portrait phones, less than 576px)
+    No media query since this is the default in Bootstrap
+
+    Small (sm) devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+
+    Medium (md) devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    Large (lg) devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    Extra (xl) large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }
+
+    .col-md のように上記2文字を用いたレスポンシブ設定を用いる。
+        幅指定なし.col は「全画面で有効」
+        幅指定(例: .col-md )は「この幅以上で有効」
+
+
+・Z-index
+    1000 以上の z-index を特定のコンポーネントのために予約している
+    1,2,3 は要素の状態(ホバー、アクティブ、フォーカス)の表示カスタマイズのために用いられる(
